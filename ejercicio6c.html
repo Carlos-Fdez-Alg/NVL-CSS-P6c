@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Práctica CSS: receta de cocina</title>
+    <style>
+      main {
+        background-color: #ffcc99;
+        margin: 0;
+        padding: 15px 0 15px 8px;
+      }
+      footer {
+        background-color: #66ff66;
+        text-align: center;
+        padding: 10px;
+      }
+      h1 {
+        text-align: center;
+        vertical-align: middle;
+        font-family: "Segoe UI", serif;
+        background-color: #f8a3eb;
+        margin: 0;
+        padding: 15px;
+      }
+      h4 {
+        text-align: center;
+        font-family: cursive;
+      }
+      img {
+        display: block;
+        margin: auto;
+      }
+      .formulario {
+        text-align: center;
+      }
+      .formulario p {
+        font: italic small-caps bold 16px/2 cursive;
+      }
+      .navegacion {
+        list-style: none;
+        text-align: center;
+        background-color: #a8ffff;
+        margin: 0;
+        padding: 10px;
+      }
+      .navegacion>li{
+        font: x-large Monaco;
+        display: inline;
+        padding: 100px;
+      }
+      .ingredientes{
+        list-style-type: "\1F44D";
+        padding-bottom: 15px;
+      }
+      .ingredientes>li{
+        padding: 5px 0 5px 0;
+      }
+      .preparacion>li{
+        padding: 10px 0 10px 0;
+      }
+      .truco{
+        text-align: center;
+        padding: 10px 0 10px 0;
+        background-color: #66ffcc;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Corona de bizcocho rosa con glaseado y nubes</h1>
+      <nav>
+        <ul class='navegacion'>
+          <li><a href="#ingredientes">Ingredientes</a></li>
+          <li><a href="#preparacion">Preparación</a></li>
+          <li><a href="#formulario">Formulario</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id='ingredientes'>
+        <h3>Los ingredientes que vamos a necesitar son:</h3>
+        <ul class='ingredientes'>
+          <li><strong>3</strong> huevos</li>
+          <li><strong>1</strong> yogur</li>
+          <li><strong>3 envases</strong> (del yogur) de harina</li>
+          <li><strong>2 envases</strong> (del yogur) de azúcar</li>
+          <li><strong>1 envase</strong> (del yogur de aceite de oliva)</li>
+          <li><strong>1 sobre</strong> de levadura en polvo</li>
+          <li><strong>1</strong> limón (piel rallada)</li>
+          <li><strong>1 cucharadita</strong> de mantequilla</li>
+          <li>Gotas de colorante alimentario rosa</li>
+          <li><strong>100 ml</strong> de zumo de limón para el glaseado</li>
+          <li><strong>80 g</strong> de azúcar para el glaseado</li>
+          <li><strong>70 g</strong> de mantequilla para el glaseado</li>
+          <li><strong>1</strong> yema de huevo para el glaseado</li>
+          <li><strong>1</strong> huevo pequeño para el glaseado</li>
+          <li><strong>5 g</strong> de harina de maíz para el glaseado</li>
+          <li><strong>1 hoja</strong> de gelatina de <strong>2 gramos</strong> para el glaseado</li>
+          <li>Gotas de colorante alimentario rosa para el glaseado</li>
+          <li>Nubes de color rosa para decorar</li>
+        </ul>
+      </section>
+      <section id='preparacion'>
+        <h3>Vamos a ver como preparar nuestro bizcocho</h3>
+        <ol class="preparacion">
+          <li>Prepara el bizcocho. Bate los huevos y el azúcar con unas varillas eléctricas, un par de minutos. Agrega el colorante, la ralladura de limón, el yogur, y la harina y la levadura tamizadas. Mezcla de nuevo y añade, por último, el aceite.</li>
+          <li>Precalienta el horno a 180°. Unta un molde de corona de 22 cm de diámetro con la mantequilla, o varios moldes más pequeños, recubre la base con papel de horno y vierte la mezcla preparada. Hornea 1 hora.</li>
+          <li>Comprueba la cocción pinchando el centro del bizcocho con un palillo; si sale limpio, ya está. Si no, cuece unos 5-10 minutos más. Deja enfriar el bizcocho por completo y desmóldalo.</li>
+          <li>Calienta el zumo de limón con la mitad del azúcar y la mantequilla. Deja en remojo de agua fría la hoja de gelatina. En un bol, bate el huevo, la yema, el azúcar restante y la maicena. Añade la mezcla caliente, bate bien con las varillas y vuelve a poner en el cazo.</li>
+          <li>Cuece la crema a fuego lento, removiendo, hasta que espese ligeramente. Retírala del fuego, agrega la gelatina escurrida y colorante al gusto. Mezcla bien y dejar entibiar un poco. Entonces, viértela sobre el bizcocho. Deja enfriar y decora con las nubes.</li>
+        </ol>
+        <aside class="truco">
+          <p><b><em>El truco:</em></b> Sustituye la ralladura de limón por ralladura de naranja y añade una cucharadita de azúcar avainillado</p>
+        </aside>
+        <h4>Y el resultado final es:</h4>
+        <img src="https://content-recetas.lecturas.com/medio/2020/05/26/paso_a_paso_para_realizar_corona_de_bizcocho_rosa_con_glaseado_y_nubes_resultado_final_f87672db_800x1199.jpg" alt="Imagen de la corona de bizcocho rosa con glaseado y nubes" width="600" height="900">
+      </section>
+      <br>
+      <section id='formulario'>
+        <h3>Cuéntanos si te ha gustado o si tienes alguna pregunta acerca del proceso.</h3>
+        <form class="formulario" action="index.html" method="post">
+          <section class="dificultad">
+            <p>¿Cómo de difícil te ha parecido la elaboración del bizcocho?</p>
+            <br>
+            <input type="radio" id="dif-4"name="dificultad" value="Casi imposible"><label for="dif-4">Casi imposible</label>
+            <input type="radio" id="dif-3"name="dificultad" value="Dificil"><label for="dif-3">Difícil</label>
+            <input type="radio" id="dif-2"name="dificultad" value="Normal" checked><label for="dif-2">Ni fú ni fá</label>
+            <input type="radio" id="dif-1"name="dificultad" value="Sencillo"><label for="dif-1">Sencillo</label>
+          </section>
+          <br>
+          <section class="sabor">
+            <p>De sabor...¿qué tal?</p>
+            <br>
+            <input type="radio" id="sabor-4"name="sabor" value="Espectacular" checked><label for="sabor-4">ES-PEC-TA-CU-LAR</label>
+            <input type="radio" id="sabor-3"name="sabor" value="Muy rico"><label for="sabor-3">Muy rico</label>
+            <input type="radio" id="sabor-2"name="sabor" value="Aceptable"><label for="sabor-2">Aceptable</label>
+            <input type="radio" id="sabor-1"name="sabor" value="Decepcionante"><label for="sabor-1">Decepcionante</label>
+          </section>
+          <br>
+          <section class="buzon">
+            <p>Déjanos tus preguntas, comentarios, sugerencias o dudas aquí.</p>
+            <br>
+            <textarea name="buzon" rows="8" cols="80" placeholder="Escribe aquí..."></textarea>
+          </section>
+          <br>
+          <section class="submit">
+            <input type="submit" name="submit" value="Enviar datos">
+          </section>
+        </form>
+      </section>
+    </main>
+    <footer>Receta sacada de la revista <a href="https://www.lecturas.com/recetas/corona-bizcocho-rosa-glaseado-y-nubes_8637.html/1" target='_blank'>Lecturas</a></footer>
+  </body>
+</html>
